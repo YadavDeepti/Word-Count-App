@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import Textform from './components/textform';
@@ -58,7 +58,7 @@ function App() {
   <Routes>
           <Route exact path="/about" element = {<About mode ={mode}/>}>
             </Route>
-          <Route exact path="/" element = {<Textform showAlert = {showAlert}heading="Enter Some Text" mode={mode}/>}>
+          <Route exact path="/" element = {<Textform showAlert = {showAlert} heading="Enter Text" mode={mode}/>}>
           </Route>
         </Routes>
         </div>

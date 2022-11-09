@@ -6,14 +6,14 @@ import React, {useState} from 'react';
 export default function Textform(props) {
     const handleClick = (e) => {
         e.preventDefault();
-        console.log("UPPERCASE was cicked" + text);
+        //console.log("UPPERCASE was cicked" + text);
         let newText = text.toUpperCase();
         setText(newText);
         props.showAlert("Converted to Upper Case", "success");
     }
 
     const handleOnchange = (e) => {
-        console.log("On change");
+        //console.log("On change");
         setText(e.target.value);
     }
     const [text, setText] = useState("");
